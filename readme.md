@@ -6,4 +6,5 @@ package.json:
 "type": "module",
 "test": "NODE_OPTIONS=--experimental-vm-modules jest --verbose"
 
-SUpertest statet ein server
+https://www.npmjs.com/package/supertest
+https://github.com/ladjs/superagent
