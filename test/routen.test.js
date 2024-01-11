@@ -2,7 +2,6 @@ import supertest from "supertest";
 import { app } from "../app.js";
 
 const request = supertest(app);
-//supertest startet ein port und kann man da testen, port das wir nicht kennen
 
 describe('Route "/" GET', () => {
   test('Ich prüfe ob meine Route antwortet "/", get route', async () => {
@@ -13,7 +12,6 @@ describe('Route "/" GET', () => {
     const response = await request.get("/");
     expect(response.text).toBe("Hello Coder");
   });
-  //   hier mehrere test für die get route
 });
 
 describe('Route "/" POST', () => {
@@ -26,5 +24,4 @@ describe('Route "/" POST', () => {
     expect(response.statusCode).toBe(200);
     expect(email).toBe("c@s.de");
   });
-  //   hier mehrere test für die post route
 });
